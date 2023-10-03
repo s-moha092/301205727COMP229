@@ -1,0 +1,61 @@
+<%- include partials/header.ejs %>
+
+<%- include partials/main_nav.ejs %>
+  
+
+  <!-- Main Content -->
+  <main class="container">
+    <div class="jumbotron">
+      <h1 class="display-4">Welcome to the <%= title %> page</h1>
+      <br>
+
+
+     <!--HTML CONTENT-->
+     <div id="contact">
+
+      <div class="container">
+
+          <div class="row">
+
+              <div class="contact-left">
+
+                  <h3 class="sub-title">Contact Me</h3>
+
+                  <p><strong>Email: </strong><i>Samra.Mohamed@hotmail.com</i></p>
+
+                  <p><strong>Phone: </strong><i>+1-613-555-5555</i></p>
+
+
+
+              </div>
+
+             
+
+              <div class="contact-right"></div>
+
+              <form action="/home" name="contactMe">
+
+                  <input type="text" name="Name" placeholder="Your Name" required>
+
+                  <input type="email" name="Email" placeholder="Your Email" required>
+
+                  <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+
+                  <button type="submit" value="Send" class="btn btn2">Submit</button>
+
+              </form>
+
+              <span id="msg"></span>
+
+          </div>
+
+     <!--HTML CONTENT-->
+
+
+    </div>
+  </main>
+  
+<%- include partials/bottom_nav.ejs %>  
+
+<%- include partials/footer.ejs %>
+  
